@@ -5,6 +5,7 @@ echo script
 read script
 echo "#!/bin/bash
 ${script}" > ${name}
+chmod +x ${name}
 echo "commit"
 read commit
 git add .
