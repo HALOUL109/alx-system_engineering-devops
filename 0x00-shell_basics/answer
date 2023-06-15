@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "filename"
+read name
+echo script
+read script
+echo "#!/bin/bash
+${script}" > ${name}
+echo "commit"
+read commit
+git add .
+git commit -m "${commit}"
+git push
