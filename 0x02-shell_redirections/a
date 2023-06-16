@@ -1,0 +1,13 @@
+#!/bin/bash
+echo filename
+read filename
+echo script
+read script
+echo commit
+read commit
+echo "#!/bin/bash
+${script}" > ${filename}
+chmod +x ${filename}
+git add .
+git commit -m "${commit}"
+git push
