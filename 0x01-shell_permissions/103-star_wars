@@ -1,22 +1,2 @@
 #!/bin/bash
-
-# This script will play the Star Wars Episode IV in the terminal.
-
-# Get the current working directory
-cur_dir=$(pwd)
-
-# Get the path to the Star Wars Episode IV ASCII art file
-ascii_art_file="$cur_dir/starwars_episode_iv.ascii"
-
-# Check if the file exists
-if [ ! -f "$ascii_art_file" ]; then
-
-  # The file does not exist, so download it
-  echo "Downloading Star Wars Episode IV ASCII art..."
-  curl -o "$ascii_art_file" https://asciinema.org/a/1234567890
-
-fi
-
-# Play the Star Wars Episode IV ASCII art
-echo "Playing Star Wars Episode IV ASCII art..."
-asciinema play "$ascii_art_file"
+telnet towel.blinkenlights.nl
